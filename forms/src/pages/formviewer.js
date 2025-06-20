@@ -4,7 +4,8 @@ import axios from 'axios';
 import { Box, Spinner, Text, useToast } from '@chakra-ui/react';
 import { DynamicForm } from './formcomponent';
 import { api } from '../actions/api';
-const FormViewer = () => {
+
+export const FormViewer = () => {
   const { formId } = useParams(); // Extract formId from the URL
   const [form, setForm] = useState(null); // State to store form data
   const [loading, setLoading] = useState(true); // Loading state
@@ -51,4 +52,3 @@ const FormViewer = () => {
   );
 };
 
-export default FormViewer;
