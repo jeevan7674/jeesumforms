@@ -9,7 +9,7 @@ import { EditFormPage } from "./pages/update"
 import { ResponsesPage } from "./pages/response"
 import { ChakraProvider } from "@chakra-ui/react";
 import LandingPage from "./pages/landingpage";
-import { LoginPage } from "./pages/login page";
+import InteractiveAuthPage from "./pages/login page";
 import { SignupPage } from "./pages/signup";
 
 export default function App() {
@@ -18,7 +18,7 @@ export default function App() {
       <Router>
         <Routes>
           <Route path="/" element={<LandingPage/>} />
-          <Route path="/login" element={<LoginPage/>} />
+          <Route path="/login" element={<InteractiveAuthPage/>} />
           <Route path="/signup" element={<SignupPage/>} />
           <Route path="/registration" element={< VisibleFormsPage />} />
           <Route path="/form/:formId" element={<FormViewer />} />
